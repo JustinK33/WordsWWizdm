@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(135deg, #f3f6fb 0%, #e9ecf6 100%);
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  width: 100px;
+  height: 35px;
+  background-color: #f3f6fb;
+  border: none;
+  border-radius: 25px;
+  color: #424242;
+  box-shadow: -6px -6px 10px #f9f9f9,
+              6px 6px 10px #00000026;
+}
+.btn:hover {
+  box-shadow: 2px 2px 2px #f9f9f9,
+  -2px -2px 2px #00000026;
+}
+nav {
+  display: flex; /* turns nav into a flex container for easy layout*/
+  justify-content: space-between; /* Puts space between left and right nave items*/
+  align-items: center; /* vertically centers nav items*/
+  padding: 32px 80px 0 80px; /* top 32px right 80px bottom 0 left 80px*/
+  background: transparent; /* not color keeps nav see-through*/
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #5b7fff;
+}
+
+.main-content {
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(60, 60, 100, 0.10);
+  padding: 48px 40px;
+}
+.flash {
+  background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: #222;
+  border-radius: 12px;
+  padding: 18px 28px;
+  margin: 18px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 18px 0 rgba(60, 60, 100, 0.10);
+  font-size: 1.1rem;
+  font-weight: 500;
+  list-style: none;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+
+.flash.error {
+  background: linear-gradient(90deg, #ffb3b3 0%, #ffd6d6 100%);
+  color: #a10000;
+}
+
+.flash.success {
+  background: linear-gradient(90deg, #b3ffd6 0%, #d6fff6 100%);
+  color: #00663d;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.featured-quote {
+  font-size: 1.2rem;
+  color: #5b7fff;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    padding: 24px 10px;
+    margin: 20px;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 10px 0 10px;
+  }
+}

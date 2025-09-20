@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Quote · Flask Quotes{% endblock %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>Add a quote</h1>
+        <form method="post" action="{{ url_for('add_quote') }}">
+            <input type="text" name="quote" placeholder="Enter a quote">
+            <p><button type="submit">Add</button></p>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home · Flask Quotes{% endblock %}
+
+{% block content %}
+  <div class="main-content">
+    <h1>Featured Quote</h1>
+    <div class="featured">{{ featured }}</div>
+
+    <h2>All Quotes</h2>
+    {% if quotes %}
+      <ul class="quotes">
+        {% for q in quotes %}
+          <li>{{ q.text }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No quotes yet. <a href="{{ url_for('add_quote') }}">Add one</a>?</p>
+  </div>
+
+  {% endif %}
+{% endblock %}
