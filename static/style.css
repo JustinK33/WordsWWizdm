@@ -5,9 +5,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.my-quote {
-  
+ul {
+  list-style-type: none;
 }
+li::before {
+  content: "- ";
+}
+
 .btn {
   width: 100px;
   height: 35px;
@@ -23,11 +27,11 @@ body {
   -2px -2px 2px #00000026;
 }
 nav {
-  display: flex; /* turns nav into a flex container for easy layout*/
-  justify-content: space-between; /* Puts space between left and right nave items*/
-  align-items: center; /* vertically centers nav items*/
-  padding: 32px 80px 0 80px; /* top 32px right 80px bottom 0 left 80px*/
-  background: transparent; /* not color keeps nav see-through*/
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 32px 80px 0 80px;
+  background: transparent;
 }
 
 nav a {

@@ -14,7 +14,7 @@
     {% if quotes %}
       <ul class="quotes">
         {% for q in quotes %}
-          <li>{{ q.text }}</li>
+          <li><i>"{{ q.text }}"</i></li>
         {% endfor %}
       </ul>
     {% else %}
