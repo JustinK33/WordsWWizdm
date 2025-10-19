@@ -1,4 +1,4 @@
-# Flask Quotes App
+# WordsWWizdm
 
 A full-stack web application built with **Flask**, **SQLite**, and **SQLAlchemy**, featuring user authentication, dynamic content, and a RESTful API. Users can register, log in, add quotes, and view all submitted quotes in a clean, responsive interface.
 
